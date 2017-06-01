@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>contact1</title>
+   <link rel="stylesheet" type="text/css" href="css\base.css">
+  <link rel="stylesheet" type="text/css" href="css\reset-2.css">
+  <link rel="stylesheet" type="text/css" href="css\nav.css">
+    <link href="css/unslider-dots.css" rel="stylesheet" />
+    <link href="css/unslider.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/unslider-min.js"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PObj6Gy6PlyIKruYPgvzeCG9dumGq6xp">
+</script>
+</head>
+<body style="background:#fff;width:100%;height:100%;">
+<div style="position:fixed;z-index:10;left:0px;background:black;width:100%">
+<audio controls="controls" autoplay="autoplay" loop=-1>
+  <source src="music/Jewel - Stand.mp3" type="audio/mpeg" />
+</audio>
+</div>
+<div style="background:#fff;height:170px;opacity:0.9;position:fixed;top:30px;width:100%;z-index:9">
+<div id="logo" style="margin-left:350px;"><img src="img\name1.png"/></div>
+    <div style="position:absolute;top:110px;left:50px;font-size:24px;"><a href="index1.html">Index</a></div>
+ </div>
+ <a name="1"></a>
+ <div class="a-index" style="position:absolute;top:200px;left:230px;">
+ <a href="#1"><img src="img/nav-1.png" style="margin-top:7px;"></a>
+ <a href="#2"><img src="img/nav-2.png"></a>
+ <a href="#3"><img src="img/nav-3.png" style="margin-top:12px;"></a>
+ <a href="#4"><img src="img/nav-4.png" style="margin-top:7px;"></div></a>
+
+ <div class="one-logo" style="position:absolute;top:400px;left:250px;">
+ <img src="img/logo-1.png">
+ <a name="2"></a>
+ <img src="img/LOGO.png">
+<div id="to_top" style="position:fixed;color:grey;z-index:20;opacity:0.8"><a href="#1">返回顶部</a></div>
+ </div>
+
+
+ <div class="two-introduce" style="width:100%;height:500px;background:black;position:absolute;top:750px">
+ 	<img src="img/introduce.png">
+ 	<br>
+ 	<div style="width:500px;height:auto;font-size:21px;color:#e0e0e0;position:relative;left:150px;top:10px;float:left">  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;We was founded in 2016,lazy time is a shop which is providing coffee,cakes,milktea,ice cream and juice.In a hot summer day, it is an enjoyment to go into such shop. Walk into Lazy Time and you'll notice it's a little different to other coffee shops.Firstly, there's the warm and welcoming atmosphere.and we also carefully chosen food .Thus,let us stop our foot,walk into Lazy Time,fly mood.
+   </div>  
+    <div style="float:right;margin-right:100px;"><img src="img/273.jpg"></div>
+    
+<a name="3"></a>
+   <div class="pic" style="width:100%;height:330px;background:url(img/picbg.jpg);position:relative;top:400px"></div>
+    <a name="3"></a>
+    <br>
+    <br>
+   <div class="location" style="width:100%;height:150px;background:black;position:relative;top:360px">
+
+ 
+   <img src="img/location.png" style="margin:30px 300px"></div>
+   <div style="width:100%;height:550px;border:#ccc solid 1px;font-size:12px;position:relative;top:360px" id="map"></div>
+  
+  <p style="color:red;font-weight:600">     <a href="http://developer.baidu.com/map/index.php?title=jspopular/guide/introduction" style="color:#2f83c7" target="_blank"></a>
+      <a href="http://lbsyun.baidu.com/apiconsole/key?application=key" style="color:#2f83c7" target="_blank"></a>
+    </p>
+  </body>
+  <script type="text/javascript">
+    //´´½¨ºÍ³õÊ¼»¯µØÍ¼º¯Êý£º
+    function initMap(){
+      createMap();//´´½¨µØÍ¼
+      setMapEvent();//ÉèÖÃµØÍ¼ÊÂ¼þ
+      addMapControl();//ÏòµØÍ¼Ìí¼Ó¿Ø¼þ
+      addMapOverlay();//ÏòµØÍ¼Ìí¼Ó¸²¸ÇÎï
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(118.908415,31.899246),15);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+  
+  function addMapOverlay()
+{
+      var markers = [
+        {title:"LAZY&TIME",imageOffset: {width:0,height:3},
+position:{lat:31.900288,lng:118.900079}}
+      ];
+    
+  for(var index = 0; index < markers.length; index++ ){
+    
+    var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+      
+  var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //ÏòµØÍ¼Ìí¼Ó¿Ø¼þ
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+   
+   scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+    
+  map.addControl(scaleControl);
+ 
+ 
+    var navControl = new BMap.NavigationControl(
+{anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+   
+   map.addControl(navControl);
+     
+ var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+
+      map.addControl(overviewControl);
+    }
+  
+  var map;
+      initMap();
+ 
+ </script>
+ <a name="4"></a>
+<div class="value" style="width:100%,height:auto;background:white;position:relative;top:400px;font-size:24px;">
+	<img src="img/value-mission.png">
+
+<br>
+<div style="margin-left:70px;">
+    <p align="left">With our partners, our coffee,cakes,juice,ice craem,milktea and our customers at our core, we live these values:
+    <br>
+   
+    &nbsp; &nbsp;•Creating a culture of warmth and belonging, where everyone is welcome.<br>
+     &nbsp; &nbsp;•Acting with courage, challenging the status quo and finding new ways to grow our company and each other.<br>
+     &nbsp; &nbsp;•Being present, connecting with transparency, dignity and respect.<br>
+     &nbsp; &nbsp;•Delivery our very best in all we do, holding ourselves accountable for results.</p>
+    <br>
+    <br>
+    </div>
+</div>
+
+ <div class="footer" style="width:100%;height:100px;background:black;position:relative;top:400px;color:#fff;font-size:16px;"><P>&copy;2016 LAZY&TIME
+<p> ALL rights reserved. 苏ICP备 1234567号</div>
+ </div>
+
+</body>
+</html>

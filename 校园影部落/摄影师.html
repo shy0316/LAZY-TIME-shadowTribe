@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>摄影师</title>
+<link href="CSS/7.css" rel="stylesheet" type="text/css"> 
+<script src="CSS/4.js"></script>
+</head>
+
+<body onload="init()">
+<div id="whole">
+<header></header>
+<nav>
+ 
+<h3 style="float:left;color:#990000;margin:5px 15px;"><a href="企业概况.html">返回</a>&nbsp;&nbsp;<a href="Index.html">首页</a></h3>
+</nav>
+<div id="content">
+<aside>
+ <ul class="ulone">
+	<li class="lione"><a href="摄影师.html">摄影师</a>
+	<li class="lione"><a href="活动策划师.html">活动策划师</a>
+	<li class="lione"><a href="化妆师.html">化妆师</a>
+	<li class="lione"><a href="修图师.html">修图师</a>
+	<li class="lione"><a href="订单查询.html">订单查询</a>
+    </ul>
+<br /><br />
+
+<div id="rili">
+<br /><br /><br />
+<p>客服热线：0512-00000000</p>
+</div>
+
+</aside>
+
+<article>
+<section>
+<img src="图片素材/摄影师.png" class="img08"><img src="图片素材/分隔线.png" class="img10">
+<br /><br /><br />
+	<div id="main01">
+	<div class="gerenxinxi">
+	<img src="图片素材/8617a49e1a8d561b.jpg" style="position:relative;top:2px;left:2px;" />
+	<br /><br /><br />
+	<font color="#CCCCCC">昵称:</font><select size="1" name="">
+	<option value=""><a href="图片素材/8617a49e1a8d561b.jpg">Hanmu</a></option>
+	<option value=""><a href="图片素材/6ed83ec93110f126.jpg">Tom</a></option>
+	<option value=""><a href="图片素材/3b93aea7a9a8351f.jpg">Bake</a></option>
+	</select>
+	</div>
+	</div>
+	<div id="main02">
+	</div>
+	<br />
+<div id="section1">
+<p style="padding:0px;margim:0px;"><b><font size="5" color="#660000">个人作品</font></b></p>
+<div id="colee_left" style="overflow:hidden;width:900px;margin:0px auto;">
+		<table cellpadding="0" cellspacing="0" border="0">
+		 <tr>
+		 <td id="colee_left1" valign="top" align="center">
+		 <table cellpadding="2" cellspacing="0" border="0" style="position:relative;top:60px;">
+  		 <tr align="center">
+			<td><p><img src="图片素材/160c19900e1b2c84.jpg"></p></td>
+			<td><p><img src="图片素材/5c28dff1e4069218.jpg"	></p></td>
+			<td><p><img src="图片素材/1a73eb3e652ab11d.jpg"></p></td>
+			<td><p><img src="图片素材/0454de1e2ee5c9dd.jpg"></p></td>
+			<td><p><img src="图片素材/1f0ea4235548e83c.jpg" /></p></td>
+			</tr>
+		</table>
+		</td>
+		<td id="colee_left2" valign="middle"></td>
+		</tr>
+		</table>
+	</div>
+<script>
+//使用div时，请保证colee_left2与colee_left1是在同一行上.
+var speed=15//速度数值越大速度越慢
+var colee_left2=document.getElementById("colee_left2");
+var colee_left1=document.getElementById("colee_left1");
+var colee_left=document.getElementById("colee_left");
+colee_left2.innerHTML=colee_left1.innerHTML
+function Marquee3(){
+if(colee_left2.offsetWidth-colee_left.scrollLeft<=0)//offsetWidth 是对象的可见宽度
+colee_left.scrollLeft-=colee_left1.offsetWidth//scrollWidth 是对象的实际内容的宽，不包边线宽度
+else{
+colee_left.scrollLeft++
+}
+}
+var MyMar3=setInterval(Marquee3,speed)
+colee_left.onmouseover=function() {clearInterval(MyMar3)}
+colee_left.onmouseout=function() {MyMar3=setInterval(Marquee3,speed)}
+</script>
+</div>
+</section>
+</div>
+
+<br />
+<div id="section2">
+<br />
+<br/>
+<hr  size="5" color="#660000" style="margin:0px auto;width:1300px;position:relative;bottom:40px;" />
+<span><img src="图片素材/未标题-1.png" /></span>
+<br /><br />
+<span class="span01">&nbsp;&nbsp;&nbsp;&nbsp;用户评价及最新需求&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<br />
+<hr size="2"  style="position:relative;top:30px;"/><hr size="2"  style="position:relative;top:30px;" />
+<br />
+<br />
+<table style="width:1200px;float:left ;">
+  <tr>
+  <td style="float:left;height:50px;">
+   <input type="button" name="quanbu" value="全部"style="background-color:#994D00;color:#FFFFFF;width:80px;height:40px;" />    	   &nbsp;&nbsp;<input type="button" name="" value="有图"style="background-color:#994D00;color:#FFFFFF;width:80px;height:40px;"/>     &nbsp;&nbsp;<input type="button" name="" value="追加"style="background-color:#994D00;color:#FFFFFF;width:80px;height:40px;" />
+  
+   </td>
+   </tr>
+  <tr  class="tr02"><td><img src="图片素材/头像.jpg" /> &nbsp;&nbsp;1**n</td></tr>
+   <tr class="tr02"><td>摄影师好帅，而且态度很好！ </td></tr>
+ <tr class="tr01"><td> 2016-04-17</td></tr>
+  <tr  class="tr02"><td><img src="图片素材/头像.jpg" /> &nbsp;&nbsp;1**n</td></tr>
+<tr  class="tr02"><td> 服务非常好 </td></tr>
+ <tr class="tr01"><td> 2016-04-17</td></tr>
+ <tr   class="tr02"><td><img src="图片素材/头像.jpg" /> &nbsp;&nbsp;1**n</td></tr>
+ <tr class="tr02"><td> 摄影师拍照技术棒棒哒！ </td></tr>
+ <tr  class="tr01"><td> 2016-04-17</td></tr>
+ <tr class="tr02"><td><img src="图片素材/头像.jpg" /> &nbsp;&nbsp;1**n</td></tr>
+ <tr class="tr02"><td> 服务非常好！ </td></tr>
+ <tr class="tr01"><td> 2016-04-17</td></tr>
+ <tr class="tr02"><td><img src="图片素材/头像.jpg" /> &nbsp;&nbsp;1**n</td></tr>
+ <tr class="tr02">
+   <td> Good </td>
+ </tr>
+ <tr  class="tr01"><td> 2016-04-17</td></tr>
+  </table>
+  </div>
+</article>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+<footer><p align="center" ><br />Copyright&copy;&nbsp;campushoot.com Inc. All Right Reserved.  南京校园影部落摄影有限公司 版权所有   <br /><br>
+客服专线：025-12345678 苏ICP备00000000号
+</p></footer>
+</div>
+</body>
+</html>
+

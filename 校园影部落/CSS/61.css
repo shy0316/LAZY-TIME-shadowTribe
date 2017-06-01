@@ -1,0 +1,111 @@
+body{ background:#EAEAEA; font:white;}
+#whole{
+	margin:0px auto;
+	padding:0px 0px;
+	background:#F1F1F1;
+	width:1600px;
+	height:3000px;
+}
+header{
+	height:258px;
+	width:1600px;
+	padding:0px 0px;
+	margin:0px 0px;
+}
+nav{
+	height:50px;
+	width:1600px;
+	padding:0px 0px;
+	margin:0px auto;
+	background:#999999;
+	position:relative;
+	top:0px;
+	opacity:1;
+}
+
+aside{
+	width:24.9%;
+	height:3745px;
+	padding:0px 0px;
+	margin:0px 0px;
+	float:left;
+	/*background:rgba(#CCCCCC,0.8);*/
+	background:#E8E8E8;
+	border-bottom:1.5px dashed #999999;
+	box-shadow:3px 0px 6px #FEFCF1;
+	position:relative;
+	
+}
+.ultwo{
+	width:1600px;
+	list-style-type:none;
+	text-align:right;
+	marin:0px 0px;
+	color:#EAEAEA;
+}
+.litwo{
+	float:left;
+	position:relative;
+	top:7px;
+	left:850px;
+	width:130px;
+    color: #EAEAEA;
+	padding:2px 0px;
+	font:25px "方正姚体";
+}
+.litwo a{
+	text-decoration:none;
+	color:#EAEAEA;
+	font:25px "方正姚体";
+	}
+.litwo a:hover{
+	color:#FFFFFF;
+	text-shadow: #C08738 2px 2px 4px;}
+.ulone{
+	width:300px;
+	height:200px;
+	list-style-type:none;
+	text-align:left;
+	margin:80px 5px;
+}
+.lione{
+	width:180px;
+	height:30px;
+	padding:10px 0px 10px 80px;
+	margin:10px auto;
+	font:25px "方正姚体";
+	background-image:url(../图片素材/公司简介导航.png);
+}
+.lione a{
+	width:200px;
+	height:30px;
+	text-decoration:none;
+    color: #FFFFFF;
+	font:25px "方正姚体";
+	}
+.lione a:hover{
+	width:200px;
+	height:30px;
+	color: #FFFFFF;
+	text-shadow:#000000 2px 2px 4px;
+}
+footer{
+	font:13px "华文楷体";
+	height:80px;
+	width:1590px;
+	padding:5px;
+	margin:0px auto;
+	clear:both;
+	background:#000000;
+	color:#CCCCCC;
+}
+.index
+{
+	float:left;
+	font:20px '幼圆';
+	color:#990000;
+	 text-decoration:none;
+	  text-indent:32px;
+	line-height:2.4em;
+	}
+.topbartable{width:1600px;height:15px;font:13px gray "宋体";margin:0px 0px 0px 0px;padding:0px 0px; background-color:#EAEAEA;}

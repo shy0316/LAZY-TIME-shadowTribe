@@ -1,0 +1,93 @@
+body{ background:#EAEAEA; font:white;}
+header{
+	height:273px;
+	width:1600px;
+	padding:5px;
+	margin:0px auto;
+}
+.topbartable{width:1600px;height:15px;font:13px gray "ËÎÌå";margin:0px 0px 0px 0px;padding:0px 0px; background-color:#EAEAEA;}
+nav
+{
+	width:1600px;
+	height:50px;
+	margin:0px auto;
+    position:relative;
+	top:10px;
+	background-image:url(../Í¼Æ¬ËØ²Ä/Íþ¿Í×¨Çøµ¼º½.jpg)
+	
+}
+.index
+{
+	float:left;
+	font:20px 'Ó×Ô²';
+	color:#990000;
+	 text-decoration:none;
+	  text-indent:32px;
+	line-height:2.4em;
+	}
+.title
+{
+	float:right;
+	margin:0px auto;
+	width:200px;
+
+}
+article
+{
+	height:1600px;
+	width:1550px;
+	position:relative;
+	top:60px;
+	left:-70px;
+	margin:0px auto;
+}
+
+.artabletite
+{
+	background-color:#666666;
+	color:#FFFFFF;
+	height:50px;
+	text-align:center;
+}
+.jishutable01
+{
+	width:1400px;
+	height:50px;
+	background-color:#FFFFFF;
+	margin:0px 60px;
+	text-align:center;
+	cellspacing:0px;
+	padding:0px;
+}
+.jishutitle
+{
+	text-align:left;
+	font:32px 'Ó×Ô²';
+	color:#990000;
+}
+.jishutd00
+{
+	width:50px;
+	height:50px;
+	background-color:#999999;
+}
+.jishutd01
+{
+	width:400px;
+	height:50px;
+	background-color:#999999;
+}
+.jishutd02
+{
+	width:150px;
+	height:50px;
+	background-color:#999999;
+}
+footer
+{
+	background-image:url(../Í¼Æ¬ËØ²Ä/µ¼º½À¸.jpg);
+	color:white;
+	width:1600px;
+	height:80px;
+	margin:0px auto;
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>校园影部落</title>
+<style type="text/css">
+body{ background:#EAEAEA; font:white;}
+header{
+	height:273px;
+	width:1600px;
+	padding:5px;
+	margin:0px auto;
+}
+nav{
+	height:55.5px;
+	width:1600px;
+	padding:0px 0px;
+	margin:0px auto;
+}
+article{
+	border: solid 0px black;
+	height:3000px;
+	width:1600px;
+	padding:0px;
+	margin:0px auto;
+}
+footer{
+	font:13px "华文楷体";
+	height:80px;
+	width:1600px;
+	padding:5px;
+	margin:0px auto;
+	clear:both;
+	background:#000000;
+	color:#CCCCCC;
+}
+.ul1{ list-style-type:none;;text-align:center;}
+.li1{ border: solid 2px #CCCCCC; 
+	border-radius:5px;
+	box-shadow:2px 2px 8px darkgray;
+	background-color:#F2F2F2;
+	width:15%;
+	float:left;
+	text-align:center
+	text-transform:uppercase;
+	color:#000000;
+	letter-spacing:4px;
+	padding:5px 5px;
+	font:15px "Courier New";}
+.topbartable{width:1600px;height:15px;font:13px gray "宋体";margin:0px 0px 0px 0px;padding:0px 0px; background-color:#EAEAEA;}
+#bigimg{
+	margin:0px 70px 0px 70px; padding:0px 0px 0px 0px;
+	width:1400px; height:750px }
+.show{
+	margin:0px 70px 0px 70px; padding:0px 0px 0px 0px;
+	width:1400px; height:750px }
+.table2{
+	width:1300px;
+	height:200px;
+	padding:0px;
+	margin:160px auto;
+	text-align:center;
+}
+
+.imgbig{
+	height:750px; width:1400px;
+	box-shadow:3px 0px 7px #CCCCCC;
+	margin:0px auto; padding:0px 0px;}
+.img1{
+	width:1400px; height:200px;
+	padding:0px 0px; margin:0px 70px 10px 75px;}
+ .ulone{
+	margin:0px -43px;
+	list-style-type:none;
+	text-align:center;
+	background:#000000;
+	}
+.lione{
+	background: #000000;
+	height:55px;
+	float:left;
+	width:321px;
+	margin:0px auto;
+	padding:0px;
+	font:30px "方正姚体";
+	}
+.ultwo{
+	position:absolute;
+	width:321px;  
+    top:55px;
+ 	display:none;
+	list-style-type:none;
+ 	background:#FFFFFF;
+ 	margin:0px 0px;
+ 	padding:0px;
+	opacity:0.65;
+	}
+.litwo{
+	border: 0px ;
+	background:#FFFFFF;
+	height:60px;
+	width:321px;
+	margin:0px 0px;
+	padding:0px;
+	text-align:center;
+	font: 25px "方正姚体";
+	position:relative;
+	opacity:0.65;
+	
+
+}
+.lione a{
+	width:321px;
+	display:block;
+	text-decoration:none;
+	color:#CCCCCC;  
+	background:#000000;
+	padding:10px 0px 10px 0px;
+	
+}
+.litwo a{ 
+	color:#000000;
+	background:#FFFFFF;
+	
+	 }
+
+.lione a:hover{ 
+	background-image:url(图片素材/导航栏.jpg);
+}
+.litwo a:hover{ 
+	background-image:url(图片素材/导航栏.png);
+}
+
+*html lione{
+	float:left;
+	height:50px;
+}
+*html lione a{
+	height:50px;
+}
+li:hover ul,li .over ul{
+	display:block;
+	position:relative;
+	top:-1px;
+}
+
+
+</style>
+<script language="javascript">    
+window.onload=refleshDesktopPic
+function refleshDesktopPic()
+{ 
+   var i = 1;
+   var j = 0;          //图片的顺序号
+   var k = 3;          //图片的张数
+   var m = 1*1000;    //每张显示的时间 毫秒
+   var n = 200;          //循环遍数
+   while(i<=(n*k))
+   {
+      j= i%k;//应该循环第几张图片以显示
+      if(j==0)
+        j=k;//最后一张图片的序号
+      setTimeout("setPic("+j+")",(m*i) ); //隔一短时间后 再替换为另一张图片
+      i = i+1; 
+   }
+}
+function setPic(picSeqNum)
+{   
+   document.all.myDiv.innerHTML = "<image id='image2' src='"'图片素材/'+picSeqNum+".jpg' height=750px width=1400px></image>";
+}
+</script> 
+<script language=javascript>
+function hero()
+{
+var herowidth=1600;//改为你要的网页宽度
+var heroheight=3800;//改为你要的网页高度
+window.resizeTo(herowidth,heroheight);
+}
+hero();
+</script>
+
+
+</head>
+
+<body onresize=hero();>
+
+<header>
+	<table border="0" class="topbartable" align="center">
+	<tr><td width="10%" align="left"><select size="1"><option>==城市选择==</option></select></td><td width="70%"></td>
+	<td width="20%" align="right"><a href=""><img src="图片素材/denglu1.gif" width="60" height="20"/></a>&nbsp;&nbsp;<a href=""><img src="图片素材/zhuce.gif"  width="60" height="20" /></a></td></tr>
+	</table>
+	<img src="图片素材/摄影banner.jpg" width="1600" height="250"></img>
+</header>
+<nav>
+ <ul class="ulone">
+	<li class="lione"><a href="Index.html">首 &nbsp;&nbsp;页</a>
+	<li class="lione"><a href="公司简介.html">公司简介</a>
+	<ul class="ultwo">
+		<li class="litwo"><a href="公司简介.html">项目概况</a>
+		<li class="litwo"><a href="公司简介.html">业务介绍</a>
+		<li class="litwo"><a href="公司简介.html">企业文化</a>
+		<li class="litwo"><a href="公司简介.html">合作校园</a>
+		<li class="litwo"><a href="公司简介.html">合作景点</a>
+	</ul>
+	<li class="lione"><a href="客户专区.html">客户专区</a>
+	<ul class="ultwo">
+		<li class="litwo"><a href="客户专区.html">发布需求</a>
+		<li class="litwo"><a href="客户专区.html">我的需求订单</a>
+		<li class="litwo"><a href="客户专区.html">评价系统</a>
+		<li class="litwo"><a href="客户专区.html">需求汇总区</a>
+	</ul>
+	<li class="lione"><a href="威客专区.html">威客专区</a>
+	<ul class="ultwo">
+		<li class="litwo"><a href="威客专区.html">摄影师</a>
+		<li class="litwo"><a href="威客专区.html">活动策划师</a>
+		<li class="litwo"><a href="威客专区.html">修图师</a>
+		<li class="litwo"><a href="威客专区.html">化妆师</a>
+		<li class="litwo"><a href="威客专区.html">其他威客校园</a>
+		<li class="litwo"><a href="威客专区.html">威客空闲发布区</a>
+	</ul>
+	<li class="lione"><a href="联系我们.html">联系我们</a>
+	<ul class="ultwo">
+		<li class="litwo"><a href="联系我们.html">摄影师</a>
+		<li class="litwo"><a href="联系我们.html">活动策划师</a>
+	</ul>
+ </ul>
+</nav>
+<article>
+
+<!-- <div id="bigimg"> 
+     <image id="image1" class="imgbig" src="图片素材/1.jpg" width=1400px height=750px align="center" ></image>
+ </div>-->
+ <div style="width:1400px; height:700px; border:1px solid #000000">
+ 
+ <script type="text/javascript">
+ 	imgUrl1="图片素材/1.jpg";
+	imgtext1="1";
+	imgLink1=escape("#");
+    imgUrl2="图片素材/2.jpg";
+	imgtext2="2";
+	imgLink2=escape("#");
+	imgUrl3="图片素材/3.jpg";
+	imgtext3="3";
+	imgLink3=escape("#");
+	imgUrl4="图片素材/4.jpg";
+	imgtext4="4";
+	imgLink4=escape("#");
+	var focus_width=1400
+	var focus_height=750
+	var text_height=20
+	var swf_height=focus_height=text_height
+	var pics=imgUrl1+"|"+imgUrl2+"|"+imgUrl3+"|"+imgUrl4
+	var links=imgLink1+"|"+imgLink2+"|"+imgLink3+"|"+imgLink4
+	var texts=imgtext1+"|"+imgtext2+"|"+imgtext3+"|"+imgtext4
+	document.write('<object ID="focus_flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-44553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,''0,0,0"
+	width="'+focus_width+'" height="'+swf_height'">');
+	document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="playswf.swf"><param name="quality" value="high"><param name="bdcolor" value="#fff">');
+	document.write('<param name="menu" value="false"><param name=vmode value="opaque">');
+	document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+	document.write('<embed ID="focus_flash" src="playswf.swf" vmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&border_width='+focus_width+'&boeder_height='+focus_height+'&text_height='+text_height+'" menu="false" bgcolor="#c5c5c5" quality="high" width="'+focus_width+'" height="'+swf_height+'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"/>');
+	document.write('</object>');
+ </script>
+ </div>
+
+<image src="图片素材/精品展示标题.jpg" class="img1" align="center"></image> 
+<table border="1" class="show">
+<tr height="25%"><td width="15%"></td><td width="10%"></td><td width="25%"></td><td width="20%"></td><td width="10%"></td><td width="20%"></td></tr>
+<tr height="15%"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr height="20%"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr height="10%"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr height="20%"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr height="10%"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
+<image src="图片素材/摄影师排名标题.jpg" class="img1" align="center"></image> 
+</article>
+
+<footer><p align="center" ><br />Copyright&copy;&nbsp;campushoot.com Inc. All Right Reserved.  南京校园影部落摄影有限公司 版权所有   <br /><br>
+客服专线：025-12345678 苏ICP备00000000号
+</p></footer>
+
+</body>
+</html>

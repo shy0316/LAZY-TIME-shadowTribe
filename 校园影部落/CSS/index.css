@@ -1,0 +1,139 @@
+body{ background:#EAEAEA; font:white;}
+header{
+	height:273px;
+	width:1600px;
+	padding:5px;
+	margin:0px auto;
+}
+nav{
+	height:55.5px;
+	width:1600px;
+	padding:0px 0px;
+	margin:0px auto;
+}
+article{
+	border: solid 0px black;
+	height:3000px;
+	width:1600px;
+	padding:0px;
+	margin:0px auto;
+}
+footer{
+	font:13px "华文楷体";
+	height:80px;
+	width:1600px;
+	padding:5px;
+	margin:0px auto;
+	clear:both;
+	background:#000000;
+	color:#CCCCCC;
+}
+.ul1{ list-style-type:none;;text-align:center;}
+.li1{ border: solid 2px #CCCCCC; 
+	border-radius:5px;
+	box-shadow:2px 2px 8px darkgray;
+	background-color:#F2F2F2;
+	width:15%;
+	float:left;
+	text-align:center
+	text-transform:uppercase;
+	color:#000000;
+	letter-spacing:4px;
+	padding:5px 5px;
+	font:15px "Courier New";}
+.topbartable{width:1600px;height:15px;font:13px gray "宋体";margin:0px 0px 0px 0px;padding:0px 0px; background-color:#EAEAEA;}
+#bigimg{
+	margin:0px 70px 0px 70px; padding:0px 0px 0px 0px;
+	width:1400px; height:750px }
+.show{
+	margin:0px 70px 0px 70px; padding:0px 0px 0px 0px;
+	width:1400px; height:750px }
+.table2{
+	width:1300px;
+	height:200px;
+	padding:0px;
+	margin:160px auto;
+	text-align:center;
+}
+
+.imgbig{
+	height:750px; width:1400px;
+	box-shadow:3px 0px 7px #CCCCCC;
+	margin:0px auto; padding:0px 0px;}
+.img1{
+	width:1400px; height:200px;
+	padding:0px 0px; margin:0px 70px 10px 75px;}
+ .ulone{
+	margin:0px -43px;
+	list-style-type:none;
+	text-align:center;
+	background:#000000;
+	}
+.lione{
+	background: #000000;
+	height:55px;
+	float:left;
+	width:321px;
+	margin:0px auto;
+	padding:0px;
+	font:30px "方正姚体";
+	}
+.ultwo{
+	position:absolute;
+	width:321px;  
+    top:55px;
+ 	display:none;
+	list-style-type:none;
+ 	background:#FFFFFF;
+ 	margin:0px 0px;
+ 	padding:0px;
+	opacity:0.65;
+	}
+.litwo{
+	border: 0px ;
+	background:#FFFFFF;
+	height:60px;
+	width:321px;
+	margin:0px 0px;
+	padding:0px;
+	text-align:center;
+	font: 25px "方正姚体";
+	position:relative;
+	opacity:0.65;
+	
+
+}
+.lione a{
+	width:321px;
+	display:block;
+	text-decoration:none;
+	color:#CCCCCC;  
+	background:#000000;
+	padding:10px 0px 10px 0px;
+	
+}
+.litwo a{ 
+	color:#000000;
+	background:#FFFFFF;
+	
+	 }
+
+.lione a:hover{ 
+	background-image:url(图片素材/导航栏.jpg);
+}
+.litwo a:hover{ 
+	background-image:url(图片素材/导航栏.png);
+}
+
+*html lione{
+	float:left;
+	height:50px;
+}
+*html lione a{
+	height:50px;
+}
+li:hover ul,li .over ul{
+	display:block;
+	position:relative;
+	top:-1px;
+}

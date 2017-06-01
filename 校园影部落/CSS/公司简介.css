@@ -1,0 +1,140 @@
+body{ background:#EAEAEA; font:white;}
+#whole{
+	margin:0px auto;
+	padding:0px 0px;
+	background:#F1F1F1;
+	width:1600px;
+	height:3000px;
+}
+header{
+	height:258px;
+	width:1600px;
+	padding:0px 0px;
+	margin:0px 0px;
+}
+nav{
+	height:50px;
+	width:1600px;
+	padding:0px 0px;
+	margin:0px auto;
+	background:#999999;
+	position:relative;
+	top:0px;
+	opacity:1;
+}
+#content{
+	width:1600px;
+	height:3745px;
+	margin:0px auto;
+	padding:0px 0px;
+	box-shadow:-3px 0px 6px #999999;
+}
+aside{
+	width:24.9%;
+	height:3745px;
+	padding:0px 0px;
+	margin:0px 0px;
+	float:left;
+	/*background:rgba(#CCCCCC,0.8);*/
+	background:#E8E8E8;
+	border-bottom:1.5px dashed #999999;
+	box-shadow:3px 0px 6px #FEFCF1;
+	position:relative;
+	
+}
+
+article{
+	width:75%;
+	padding:0px 0px;
+	margin:0px 0px;
+	float:left;
+	background:#FEFCF1;
+	box-shadow:3px 0px 6px #999999;
+}
+footer{
+	font:13px "华文楷体";
+	height:80px;
+	width:1590px;
+	padding:5px;
+	margin:0px auto;
+	clear:both;
+	background:#000000;
+	color:#CCCCCC;
+}
+.ultwo{
+	width:1600px;
+	list-style-type:none;
+	text-align:right;
+	marin:0px 0px;
+	color:#EAEAEA;
+}
+.litwo{
+	float:left;
+	position:relative;
+	top:7px;
+	left:850px;
+	width:130px;
+    color: #EAEAEA;
+	padding:2px 0px;
+	font:25px "方正姚体";
+}
+.litwo a{
+	text-decoration:none;
+	color:#EAEAEA;
+	font:25px "方正姚体";
+	}
+.litwo a:hover{
+	color:#FFFFFF;
+	text-shadow: #C08738 2px 2px 4px;}
+.ulone{
+	width:300px;
+	height:200px;
+	list-style-type:none;
+	text-align:left;
+	margin:80px 5px;
+}
+.lione{
+	width:180px;
+	height:30px;
+	padding:10px 0px 10px 80px;
+	margin:10px auto;
+	font:25px "方正姚体";
+	background-image:url(图片素材/公司简介导航.png);
+}
+.lione a{
+	width:200px;
+	height:30px;
+	text-decoration:none;
+    color: #FFFFFF;
+	font:25px "方正姚体";
+	}
+.lione a:hover{
+	width:200px;
+	height:30px;
+	color: #FFFFFF;
+	text-shadow:#000000 2px 2px 4px;
+}
+.topbartable{width:1600px;height:15px;font:13px gray "宋体";margin:0px 0px 0px 0px;padding:0px 0px; background-color:#EAEAEA;}
+.img01{margin:0px 0px;padding:0px 0px;}
+.img02{margn:20px auto;padding:0px 0px; clear:both; position:relative;top:70px;left:40px;}
+.img03{ width:1200px; height:400px; z-index:0; position:absolute;}
+.img04{ width:1200px; height:400px; z-index:0; position:absolute;top:3680px;left:658px;}
+.img05{width:320px; height:200px; box-shadow:3px 3px 7px black; margin:0px 10px;border-radius:150px;}
+.marquee{ border-bottom:1.5px dotted #CCCCCC;
+	border-top:1.5px dotted #CCCCCC;
+	margin:30px 20px;
+	padding:20px 20px 10px 20px;
+	z-index:1; position:relative;
+
+}
+.div01{
+	background-image:url(图片素材/标题框.png);
+	width:239px;
+	height:80px;
+	margin:100px auto 30px auto;
+	padding:0px 0px;
+	z-index:1;
+	position:relative;
+}
+.p01{font:28px "方正姚体"; color:#000000; text-shadow:2px 2px 5px #985F10; position:relative;left:70px;top:22px; opacity:0.8; z-index:1;	position:relative;}
+.p02{width:90%;margin:0px auto; padding:0px 0px;font:20px "幼圆"; color:#333333; text-indent:50px; line-height:200%; letter-spacing:5px; z-index:1;	position:relative;}
